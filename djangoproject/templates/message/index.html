@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Создать чат</p>
+  <form action="" method="post">
+        {% csrf_token %}
+        Type : <input type="text" name="actionType" value="createChat"><br><br>
+        firstUserLogin : <input type="text" name="firstUserLogin" ><br><br>
+        secondUserLogin : <input type="text" name="secondUserLogin" ><br><br>
+        token : <input type="text" name="token" ><br><br>
+        chatTitle : <input type="text" name="chatTitle" ><br><br>
+        status : <input type="text" name="status" ><br><br>
+      <input type="submit" value="Submit">
+  </form>
+
+<p>Получить чаты</p>
+  <form action="" method="post">
+        {% csrf_token %}
+        Type : <input type="text" name="actionType" value="getChats"><br><br>
+        firstUserLogin : <input type="text" name="firstUserLogin" ><br><br>
+        token : <input type="text" name="token" ><br><br>
+      <input type="submit" value="Submit">
+  </form>
+
+<p>Получить сообщения чата</p>
+  <form action="" method="post">
+        {% csrf_token %}
+        Type : <input type="text" name="actionType" value="getChatMessages"><br><br>
+        firstUserLogin : <input type="text" name="firstUserLogin" ><br><br>
+        token : <input type="text" name="token" ><br><br>
+        chatName : <input type="text" name="chatName" ><br><br>
+      <input type="submit" value="Submit">
+  </form>
+
+<p>Отправить сообщение</p>
+  <form action="" method="post">
+        {% csrf_token %}
+        Type : <input type="text" name="actionType" value="sendMessage"><br><br>
+        firstUserLogin : <input type="text" name="firstUserLogin" ><br><br>
+        token : <input type="text" name="token" ><br><br>
+        chatName : <input type="text" name="chatName" ><br><br>
+        text : <input type="text" name="text" ><br><br>
+      <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>

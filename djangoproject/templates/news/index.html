@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Добавить новость</p>
+  <form action="" method="post">
+        {% csrf_token %}
+        Type : <input type="text" name="type" value="get"><br><br>
+        NewsId : <input type="number" name="newsId" ><br><br>
+        NewsName : <input type="text" name="name" ><br><br>
+      <input type="submit" value="Submit">
+  </form>
+
+<p>Получить новость</p>
+  <form action="" method="post">
+        {% csrf_token %}
+        Type : <input type="text" name="type" value="add"><br><br>
+        name : <input type="text" name="name" ><br><br>
+        photoLink : <input type="text" name="photoLink" ><br><br>
+        description : <input type="text" name="description" ><br><br>
+        date : <input type="text" name="date" ><br><br>
+        type : <input type="number" name="newsType" ><br><br>
+        userid : <input type="number" name="userid" ><br><br>
+      <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

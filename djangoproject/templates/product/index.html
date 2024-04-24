@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Добавить продукт</p>
+  <form action="" method="post">
+        {% csrf_token %}
+        Type : <input type="text" name="type" value="add"><br><br>
+        name : <input type="text" name="name" ><br><br>
+        photoLink : <input type="text" name="photoLink" ><br><br>
+        speed : <input type="" name="speed" ><br><br>
+        description : <input type="text" name="description" ><br><br>
+        userId : <input type="number" name="userId" ><br><br>
+        price : <input type="number" name="price" ><br><br>
+        articleNumber : <input type="number" name="articleNumber" ><br><br>
+        flightTime : <input type="number" name="flightTime" ><br><br>
+        range : <input type="number" name="range" ><br><br>
+        weight : <input type="number" name="weight" ><br><br>
+        maxWind : <input type="number" name="maxWind" ><br><br>
+        maxAltitude : <input type="number" name="maxAltitude" ><br><br>
+        minAltitude : <input type="number" name="minAltitude" ><br><br>
+        motorsNumber : <input type="number" name="motorsNumber" ><br><br>
+      <input type="submit" value="Submit">
+      </form>
+
+<p>Получить продукт</p>
+  <form action="" method="post">
+        {% csrf_token %}
+        Type : <input type="text" name="type" value="get"><br><br>
+        name : <input type="text" name="name" ><br><br>
+        productId : <input type="number" name="productId" ><br><br>
+      <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
